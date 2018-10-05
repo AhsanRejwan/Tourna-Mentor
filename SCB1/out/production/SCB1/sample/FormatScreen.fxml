@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FormatScreen">
+   <children>
+      <Label layoutX="68.0" layoutY="60.0" prefHeight="17.0" prefWidth="113.0" text="Enter Attribute :" textFill="#8d1010" />
+      <Label layoutX="101.0" layoutY="14.0" text="Customize the attributes that your teams will have">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" layoutX="226.0" layoutY="56.0" promptText="Name Of Attribute" />
+      <ListView fx:id="FormatList" layoutX="59.0" layoutY="124.0" prefHeight="256.0" prefWidth="200.0" stylesheets="@Style.css" />
+      <Button fx:id="ConfirmButton" layoutX="409.0" layoutY="56.0" mnemonicParsing="false" onAction="#ConfirmButton" text="Confirm" />
+      <Button fx:id="ContinueButton" layoutX="483.0" layoutY="335.0" mnemonicParsing="false" onAction="#ContinueButton" text="Continue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="59.0" layoutY="101.0" text="Select attribute that will determine win/loss" />
+      <Button fx:id="DeleteButton" layoutX="272.0" layoutY="344.0" mnemonicParsing="false" onAction="#DeleteButton" text="Delete Selected">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

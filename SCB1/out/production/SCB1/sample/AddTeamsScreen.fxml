@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane focusTraversable="true" prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddTeamsScreen">
+   <children>
+      <TableView fx:id="PlayerTable" layoutX="31.0" layoutY="21.0" prefHeight="216.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="TableName" editable="false" prefWidth="164.0" text="Team Name" />
+          <TableColumn fx:id="TableCaptain" editable="false" prefWidth="131.0" sortable="false" text="Team Captain" />
+            <TableColumn fx:id="TableContact" editable="false" prefWidth="112.0" sortable="false" text="Contact Info" />
+            <TableColumn fx:id="TableOrg" editable="false" prefWidth="129.0" sortable="false" text="Organization" />
+        </columns>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </TableView>
+      <Button fx:id="AddButton" layoutX="41.0" layoutY="306.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="25.0" prefWidth="51.0" text="Add" />
+      <Button fx:id="ContinueButton" layoutX="509.0" layoutY="349.0" mnemonicParsing="false" onAction="#ContinueButton" text="Continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER_LEFT" layoutX="16.0" layoutY="257.0" prefHeight="30.0" prefWidth="568.0" spacing="10.0">
+         <children>
+            <TextField fx:id="NameField" prefHeight="25.0" prefWidth="173.0" promptText="Team Name" />
+            <TextField fx:id="CaptainField" prefHeight="25.0" prefWidth="116.0" promptText="Captain">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="ContactField" prefHeight="25.0" prefWidth="118.0" promptText="Contact" />
+            <TextField fx:id="OrgField" prefHeight="25.0" prefWidth="125.0" promptText="Organization" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

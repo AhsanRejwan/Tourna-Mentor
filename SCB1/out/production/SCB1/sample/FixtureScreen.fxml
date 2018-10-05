@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FixtureScreen">
+   <children>
+      <ListView fx:id="FixtureTable" layoutX="110.0" layoutY="33.0" prefHeight="221.0" prefWidth="378.0" />
+      <Button fx:id="MatchButton" layoutX="201.0" layoutY="290.0" mnemonicParsing="false" onAction="#MatchButton" />
+      <Button fx:id="StandingsButton" layoutX="323.0" layoutY="290.0" mnemonicParsing="false" onAction="#StandingsButton" text="Go to Standings" />
+      <Button fx:id="FinishButton" layoutX="253.0" layoutY="339.0" mnemonicParsing="false" onAction="#FinishButton" text="FinishTournament" />
+   </children>
+</AnchorPane>
